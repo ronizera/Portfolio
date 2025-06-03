@@ -1,0 +1,596 @@
+/* style.css - Código Completo e Corrigido com Alinhamento Principal */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #0e0e1a; /* Fundo MUITO escuro, quase preto */
+    color: #f0f0f0; /* Texto principal branco-acinzentado */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: #4dd0e1; /* Azul turquesa um pouco mais claro para links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #84ffff; /* Azul turquesa bem claro no hover */
+}
+
+/* --- Cabeçalho e Navegação (Mobile-First) --- */
+.cabecalho {
+    background: rgba(18, 18, 43, 0.3); /* Mais transparente: 0.3 */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: sticky; /* Fixa o cabeçalho no topo ao rolar */
+    top: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.menu-navegacao {
+    max-width: 1200px; /* Limita a largura do menu */
+    margin: 0 auto; /* Centraliza o menu */
+    display: flex;
+    flex-direction: column; /* Colunas por padrão (mobile) */
+    align-items: center;
+    padding: 0 15px; /* Padding ajustado para mobile */
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.6rem; /* Ajuste para mobile */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px; /* Espaçamento entre logo e menu no mobile */
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #4dd0e1;
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre itens do menu */
+}
+
+.lista-menu a {
+    color: #fff;
+    font-size: 1rem; /* Ajuste para mobile */
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.lista-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4dd0e1;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.lista-menu a:hover::after {
+    width: 100%;
+}
+
+/* --- NOVA SEÇÃO: Hero Section (Mobile-First) --- */
+/* ESTILOS PADRÃO (PARA MOBILE - ATÉ 767px) */
+.secao-hero {
+    background-color: rgba(28, 28, 58, 0.2); /* MUITO mais transparente: 0.2 */
+    padding: 30px 20px; /* Padding vertical e horizontal para mobile */
+    text-align: center;
+    color: #f0f0f0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    /* CHAVE PARA ALINHAMENTO E LARGURA */
+    max-width: 90%; /* Limita a largura a 90% da tela no mobile para deixar um respiro nas laterais */
+    margin: 30px auto; /* Centraliza a caixa horizontalmente e adiciona margem vertical */
+}
+
+.container-hero {
+    /* Não precisamos de max-width aqui, pois a .secao-hero já controla isso */
+    margin: 0 auto; /* Garante que o conteúdo interno também esteja centralizado se houver espaço */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos ajustado */
+}
+
+.foto-perfil {
+    width: 140px; /* Tamanho da foto para mobile */
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #4dd0e1;
+    box-shadow: 0 0 15px rgba(77, 208, 225, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nome-completo {
+    font-size: 2.4rem; /* Nome um pouco maior no mobile */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(77, 208, 225, 0.2);
+    margin-bottom: 5px;
+}
+
+.especializacao {
+    font-size: 1.3rem; /* Especialização maior no mobile */
+    color: #4dd0e1;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.chamada-acao {
+    font-size: 0.95rem; /* Chamada de ação maior no mobile */
+    color: #d0d0d0;
+    max-width: 600px; /* Limita a largura da chamada para ação */
+    margin-bottom: 15px;
+}
+
+/* --- Conteúdo Principal (Mobile-First) --- */
+.conteudo-principal {
+    max-width: 1200px; /* Limita a largura do container principal das seções */
+    margin: 40px auto; /* Centraliza o container principal */
+    padding: 0 15px; /* Padding nas laterais do container principal */
+}
+
+.secao {
+    background-color: rgba(28, 28, 58, 0.2); /* MUITO mais transparente para seções: 0.2 */
+    padding: 30px 20px; /* Padding interno das seções */
+    margin-bottom: 30px; /* Espaço entre as seções */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    /* CHAVE PARA ALINHAMENTO E LARGURA DAS SEÇÕES SECUNDÁRIAS */
+    max-width: 90%; /* Limita a largura das seções secundárias no mobile */
+    margin: 0 auto 30px auto; /* Centraliza e adiciona margem inferior */
+}
+
+.secao h2 {
+    font-size: 2rem;
+    color: #4dd0e1;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.secao h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #4dd0e1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+}
+
+/* --- Seção Sobre Mim --- */
+.sobre-mim p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #d0d0d0;
+}
+
+/* --- Seção Tecnologias --- */
+.lista-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.tag-tecnologia {
+    background-color: rgba(42, 42, 74, 0.1);
+    color: #f0f0f0;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(74, 74, 112, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.tag-tecnologia:hover {
+    background-color: rgba(58, 58, 96, 0.2);
+    transform: translateY(-2px);
+}
+
+.icone-tecnologia {
+    margin-right: 6px;
+    font-size: 1rem;
+    color: #4dd0e1;
+}
+
+/* --- Seção Projetos --- */
+.container-projetos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 15px;
+}
+
+.projeto-card {
+    background-color: rgba(42, 42, 74, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.35);
+    border-left: 5px solid #4dd0e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #e0e0e0;
+}
+
+.projeto-card:hover {
+    background-color: rgba(42, 42, 74, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.45);
+}
+
+.imagem-projeto {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.projeto-card h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.projeto-card p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    flex-grow: 1;
+    color: #c0c0c0;
+}
+
+.tecnologias-usadas {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.links-projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.botao-link {
+    width: 90%;
+    background-color: #4dd0e1;
+    color: #1a1a2e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.botao-link:hover {
+    background-color: #84ffff;
+    color: #1a1a2e;
+    transform: translateY(-2px);
+}
+
+.botao-link.github {
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+.botao-link.github:hover {
+    background-color: #5c6bc0;
+    color: #fff;
+}
+
+/* --- Seção Contato (Mobile-First) --- */
+.contato {
+    text-align: center;
+}
+
+.contato .subtitulo-contato {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    margin-bottom: 20px;
+}
+
+.botoes-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.botao-social {
+    display: inline-flex;
+    align-items: center;
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.botao-social i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.botao-social.linkedin {
+    background-color: #0077b5;
+}
+
+.botao-social.linkedin:hover {
+    background-color: #005f91;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+.botao-social.github-social {
+    background-color: #333;
+}
+
+.botao-social.github-social:hover {
+    background-color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Rodapé (Mobile-First) --- */
+.rodape {
+    background: rgba(18, 18, 43, 0.3); /* Mais transparente: 0.3 */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* --- Responsividade (Media Queries - Desktop / Tablet) --- */
+
+/* Estilos para telas médias (Tablets - a partir de 768px) */
+@media (min-width: 768px) {
+    .cabecalho {
+        padding: 1.2rem 0;
+    }
+
+    .menu-navegacao {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .lista-menu li {
+        margin-left: 30px;
+    }
+
+    .lista-menu a {
+        font-size: 1.1rem;
+    }
+
+    /* REAJUSTE DA HERO SECTION PARA TELAS MAIORES QUE MOBILE */
+    .secao-hero {
+        padding: 50px 60px; /* Aumenta padding horizontal para dar mais espaço */
+        max-width: 900px; /* Permite que seja mais larga em telas maiores, mas com limite */
+        margin: 50px auto; /* Centraliza e adiciona margem vertical */
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+        border-width: 5px;
+    }
+
+    .nome-completo {
+        font-size: 3.5rem;
+    }
+
+    .especializacao {
+        font-size: 1.6rem;
+    }
+
+    .chamada-acao {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    /* FIM DO REAJUSTE DA HERO SECTION */
+
+    .conteudo-principal {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .secao {
+        padding: 40px 30px; /* Padding interno das seções */
+        margin-bottom: 40px;
+        max-width: 1000px; /* Limita a largura das seções secundárias */
+        margin: 0 auto 40px auto; /* Centraliza e adiciona margem inferior */
+    }
+
+    .secao h2 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .secao h2::after {
+        width: 60px;
+        bottom: -10px;
+    }
+
+    .sobre-mim p {
+        font-size: 1.1rem;
+    }
+
+    .lista-tecnologias {
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .tag-tecnologia {
+        padding: 8px 15px;
+        font-size: 0.95rem;
+    }
+
+    .icone-tecnologia {
+        margin-right: 8px;
+        font-size: 1.1rem;
+    }
+
+    .container-projetos {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+        padding-top: 20px;
+    }
+
+    .projeto-card {
+        padding: 25px;
+    }
+
+    .imagem-projeto {
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .projeto-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .projeto-card p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .tecnologias-usadas {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .links-projeto {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 15px;
+        align-items: flex-start;
+    }
+
+    .botao-link {
+        width: auto;
+        font-size: 0.95rem;
+    }
+
+    .contato .subtitulo-contato {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+    .botoes-contato {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .botao-social {
+        width: auto;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    .botao-social i {
+        margin-right: 10px;
+        font-size: 1.3rem;
+    }
+
+    .rodape {
+        padding: 25px 0;
+        margin-top: 50px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para telas muito grandes (Desktops grandes - a partir de 1024px) */
+@media (min-width: 1024px) {
+    .container-projetos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* REAJUSTE DA HERO SECTION PARA TELAS MUITO GRANDES */
+    .secao-hero {
+        padding: 60px 80px; /* Aumenta ainda mais o padding horizontal para telas MUITO grandes */
+        max-width: 1100px; /* Aumenta a largura máxima para telas maiores */
+    }
+
+    .nome-completo {
+        font-size: 4rem;
+    }
+
+    .especializacao {
+        font-size: 2rem;
+    }
+    /* FIM DO REAJUSTE DA HERO SECTION */
+}
