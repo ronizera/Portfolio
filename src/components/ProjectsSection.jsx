@@ -42,8 +42,8 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Aqui estão alguns dos meus projetos recentes. Cada projeto foi cuidadosamente 
+          criado com atenção aos detalhes, desempenho e experiência do usuário.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/ronizera"
           >
             Check My Github <ArrowRight size={16} />
           </a>

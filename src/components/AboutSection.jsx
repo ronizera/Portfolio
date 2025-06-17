@@ -6,32 +6,32 @@ export const AboutSection = () => {
       {" "}
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
+          Sobre <span className="text-primary"> Mim</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Desenvolvedor
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+             Sou estudante do 4º semestre de Engenharia de Software, com grande interesse em desenvolvimento front-end. Tenho experiência com HTML, CSS e JavaScript, e estou me especializando em React e Tailwind CSS para criar interfaces modernas e responsivas.
+
+              Busco constantemente evoluir minhas habilidades por meio de projetos práticos e estudos contínuos. Valorizo a escrita de código limpo, a usabilidade e a boa experiência do usuário.
+
+              Atualmente, estou em busca de oportunidades que me permitam aplicar meus conhecimentos, crescer profissionalmente e contribuir com soluções inovadoras.
+
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
                 {" "}
-                Get In Touch
+                Conecte-se Comigo
               </a>
 
               <a
@@ -50,10 +50,10 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg"> Desenvolvedor Web</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    Criando sites responsivos e aplicativos da web com 
+                    estruturas modernas.
                   </p>
                 </div>
               </div>
@@ -66,8 +66,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX Design</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                     Projetando interfaces de usuário intuitivo e usuário sem interromper experiências.
                   </p>
                 </div>
               </div>
@@ -79,10 +78,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">Versionamento com Git e trabalho em equipe</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    Tenho familiaridade com Git e GitHub, o que me permite colaborar de forma eficiente em equipes, mantendo um fluxo de trabalho organizado e profissional.
                   </p>
                 </div>
               </div>
