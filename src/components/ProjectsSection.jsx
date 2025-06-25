@@ -3,12 +3,12 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "TO-DO LIST",
+    description: "Uma página que organiza uma lista de compras com tailwind e react",
+    image: "/projects/projeto-1.png",
+    tags: ["React", "TailwindCSS", ],
+    demoUrl: "https://portfolio-amber-eight-65.vercel.app/",
+    githubUrl: "https://github.com/ronizera/lista-de-compras",
   },
   {
     id: 2,
@@ -17,8 +17,8 @@ const projects = [
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
     image: "/projects/project2.png",
     tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://portfolio-amber-eight-65.vercel.app/",
+    githubUrl: "",
   },
   {
     id: 3,
