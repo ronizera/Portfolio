@@ -15,7 +15,7 @@ export const ContactSection = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           {/* GitHub Button */}
           <a
-            href="https://github.com/seu-usuario"
+            href="https://github.com/ronizera"
             target="_blank"
             rel="noopener noreferrer"
             className={cn("cosmic-button flex items-center gap-2 px-6 py-3")}
@@ -26,7 +26,7 @@ export const ContactSection = () => {
 
           {/* LinkedIn Button */}
           <a
-            href="https://www.linkedin.com/in/seu-usuario"
+            href="https://www.linkedin.com/in/ronilton-breno-oliveira-santana-8846531a2/"
             target="_blank"
             rel="noopener noreferrer"
             className={cn("cosmic-button flex items-center gap-2 px-6 py-3")}
