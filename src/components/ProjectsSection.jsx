@@ -12,13 +12,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Mini-Blog",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Aplicação de blog com criação, listagem e exclusão de posts, utilizando React, Tailwind CSS, React Router e uma API simulada com JSON Server.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "https://portfolio-amber-eight-65.vercel.app/",
-    githubUrl: "",
+    tags: ["TailwindCSS", "React", "JSON server"],
+    demoUrl: "https://mini-blog-puce-beta.vercel.app/new",
+    githubUrl: "https://github.com/ronizera/mini-blog",
   },
   {
     id: 3,
