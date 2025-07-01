@@ -6,7 +6,7 @@ const projects = [
     title: "TO-DO LIST",
     description: "Uma página que organiza uma lista de compras com tailwind e react",
     image: "/projects/projeto-1.png",
-    tags: ["React", "TailwindCSS", ],
+    tags: ["React", "TailwindCSS", "JavaScript" ],
     demoUrl: "https://portfolio-amber-eight-65.vercel.app/",
     githubUrl: "https://github.com/ronizera/lista-de-compras",
   },
@@ -16,19 +16,19 @@ const projects = [
     description:
       "Aplicação de blog com criação, listagem e exclusão de posts, utilizando React, Tailwind CSS, React Router e uma API simulada com JSON Server.",
     image: "/projects/project2.png",
-    tags: ["TailwindCSS", "React", "JSON server"],
+    tags: ["TailwindCSS", "React", "JSON server", "JavaScript"],
     demoUrl: "https://mini-blog-puce-beta.vercel.app/new",
     githubUrl: "https://github.com/ronizera/mini-blog",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Catálogos de Filmes",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Aplicação web feita com React e Tailwind CSS que permite buscar, visualizar e favoritar filmes utilizando a API pública da OMDb.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TailwindCSS", "React Router DOM", "JavaScript"],
+    demoUrl: "https://filmes-wine.vercel.app/",
+    githubUrl: "https://github.com/ronizera/filmes",
   },
 ];
 
