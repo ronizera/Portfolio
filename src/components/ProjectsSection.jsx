@@ -7,7 +7,7 @@ const projects = [
     description: "Aplicação web desenvolvida com React e Tailwind CSS que permite criar, visualizar, marcar como concluídas e excluir tarefas de forma simples e eficiente.",
     image: "/projects/projeto-1.png",
     tags: ["React", "TailwindCSS", "JavaScript" ],
-    demoUrl: "https://portfolio-amber-eight-65.vercel.app/",
+    demoUrl: "https://lista-de-compras-livid-pi.vercel.app/",
     githubUrl: "https://github.com/ronizera/lista-de-compras",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
       "Aplicação de blog com criação, listagem e exclusão de posts, utilizando React, Tailwind CSS, React Router e uma API simulada com JSON Server.",
     image: "/projects/project2.png",
     tags: ["TailwindCSS", "React", "JSON server", "JavaScript"],
-    demoUrl: "https://mini-blog-puce-beta.vercel.app/new",
+    demoUrl: "https://mini-blog-puce-beta.vercel.app/",
     githubUrl: "https://github.com/ronizera/mini-blog",
   },
   {
