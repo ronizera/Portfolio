@@ -4,7 +4,7 @@ const projects = [
   {
     id: 1,
     title: "TO-DO LIST",
-    description: "Uma página que organiza uma lista de compras com tailwind e react",
+    description: "Aplicação web desenvolvida com React e Tailwind CSS que permite criar, visualizar, marcar como concluídas e excluir tarefas de forma simples e eficiente.",
     image: "/projects/projeto-1.png",
     tags: ["React", "TailwindCSS", "JavaScript" ],
     demoUrl: "https://portfolio-amber-eight-65.vercel.app/",
