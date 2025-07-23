@@ -3,8 +3,8 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "TO-DO LIST",
-    description: "Aplicação web desenvolvida com React e Tailwind CSS que permite criar, visualizar, marcar como concluídas e excluir tarefas de forma simples e eficiente.",
+    title: "Morioka Café",
+    description: "Projeto de uma cafeteria moderna chamada Morioka, desenvolvido com Next.js, focado em performance e navegação fluida. Apresenta cardápio interativo, design responsivo e visual minimalista.",
     image: "/projects/projeto-1.png",
     tags: ["React", "TailwindCSS", "JavaScript" ],
     demoUrl: "https://lista-de-compras-livid-pi.vercel.app/",
@@ -12,9 +12,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Mini-Blog",
+    title: "Petshop",
     description:
-      "Aplicação de blog com criação, listagem e exclusão de posts, utilizando React, Tailwind CSS, React Router e uma API simulada com JSON Server.",
+      "Projeto de um Petshop moderno desenvolvido com Next.js, com interface responsiva e intuitiva. Inclui catálogo de produtos, serviços para pets e agendamento online.",
     image: "/projects/project2.png",
     tags: ["TailwindCSS", "React", "JSON server", "JavaScript"],
     demoUrl: "https://mini-blog-puce-beta.vercel.app/",
