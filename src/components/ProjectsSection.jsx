@@ -6,9 +6,9 @@ const projects = [
     title: "Morioka Café",
     description: "Projeto de uma cafeteria moderna chamada Morioka, desenvolvido com Next.js, focado em performance e navegação fluida. Apresenta cardápio interativo, design responsivo e visual minimalista.",
     image: "/projects/projeto-1.png",
-    tags: ["React", "TailwindCSS", "JavaScript" ],
-    demoUrl: "https://lista-de-compras-livid-pi.vercel.app/",
-    githubUrl: "https://github.com/ronizera/lista-de-compras",
+    tags: ["React", "TailwindCSS", "JavaScript", "Nextjs" ],
+    demoUrl: "https://cafeteria-ronizera.vercel.app/",
+    githubUrl: "https://github.com/ronizera/cafeteria",
   },
   {
     id: 2,
@@ -16,9 +16,9 @@ const projects = [
     description:
       "Projeto de um Petshop moderno desenvolvido com Next.js, com interface responsiva e intuitiva. Inclui catálogo de produtos, serviços para pets e agendamento online.",
     image: "/projects/project2.png",
-    tags: ["TailwindCSS", "React", "JSON server", "JavaScript"],
-    demoUrl: "https://mini-blog-puce-beta.vercel.app/",
-    githubUrl: "https://github.com/ronizera/mini-blog",
+    tags: ["TailwindCSS", "React", "Nextjs", "Typescript"],
+    demoUrl: "https://petshoppage.vercel.app/",
+    githubUrl: "https://github.com/ronizera/petshoppage",
   },
   {
     id: 3,
