@@ -28,6 +28,7 @@ export const AboutSection = () => {
               <a
                 href="https://1drv.ms/w/c/7ec0c23add11b46c/EatKeuyDfyxKi6PXPW7T3-cBbuu8743y9EJl62Y-fOb2TA?e=ufO3m1" // 
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                target="_blank"
                 download 
               >
                 Download CV
