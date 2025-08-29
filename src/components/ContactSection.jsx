@@ -26,7 +26,7 @@ export const ContactSection = () => {
 
           {/* LinkedIn Button */}
           <a
-            href="https://www.linkedin.com/in/ronilton-breno-oliveira-santana-8846531a2/"
+            href="www.linkedin.com/in/ronilton-breno"
             target="_blank"
             rel="noopener noreferrer"
             className={cn("cosmic-button flex items-center gap-2 px-6 py-3")}

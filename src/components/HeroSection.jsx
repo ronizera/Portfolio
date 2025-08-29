@@ -21,7 +21,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Sou desenvolvedor front-end com foco em criar interfaces modernas, responsivas e intuitivas. Tenho experiência com HTML, CSS, JavaScript e estou me aprofundando em React e Tailwind CSS.
+            Sou desenvolvedor Front-end com foco em criar interfaces modernas, responsivas e intuitivas. Tenho experiência com HTML, CSS, JavaScript, React.js, Next.js, TypeScript e Tailwind CSS, além de consumo de APIs REST. Busco aplicar meus conhecimentos em projetos reais e continuar evoluindo na carreira como desenvolvedor.
 
           </p>
 

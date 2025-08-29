@@ -30,6 +30,16 @@ const projects = [
     demoUrl: "https://filmes-wine.vercel.app/",
     githubUrl: "https://github.com/ronizera/filmes",
   },
+   {
+    id: 4,
+    title: "App de Receitas",
+    description:
+      "Aplicação web para visualização de receitas, consumindo a API pública TheMealDB. O projeto utiliza Next.js para páginas dinâmicas, TypeScript para tipagem segura e Tailwind CSS para design responsivo e moderno.O app permite navegar por categorias de receitas, visualizar detalhes completos de cada prato e buscar receitas pelo nome. Todo o código está versionado no GitHub e o projeto está publicado online para acesso direto.",
+    image: "/projects/project4.png",
+    tags: ["TailwindCSS", "React", "Nextjs", "Typescript"],
+    demoUrl: "https://receitas-rb.vercel.app/",
+    githubUrl: "https://github.com/ronizera/receitas",
+  },
 ];
 
 export const ProjectsSection = () => {

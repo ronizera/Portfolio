@@ -13,11 +13,11 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-semibold">Desenvolvedor</h3>
 
             <p className="text-muted-foreground">
-              Sou estudante do 4º semestre de Engenharia de Software, com grande interesse em desenvolvimento front-end. Tenho experiência com HTML, CSS e JavaScript, e estou me especializando em React e Tailwind CSS para criar interfaces modernas e responsivas.
+            Olá! Me chamo Ronilton Breno e sou estudante de Engenharia de Software, cursando atualmente o 4º semestre.
 
-              Busco constantemente evoluir minhas habilidades por meio de projetos práticos e estudos contínuos. Valorizo a escrita de código limpo, a usabilidade e a boa experiência do usuário.
+            Tenho interesse em desenvolvimento Front-end, estudando e praticando tecnologias como React.js, Next.js, TypeScript e Tailwind CSS.
 
-              Atualmente, estou em busca de oportunidades que me permitam aplicar meus conhecimentos, crescer profissionalmente e contribuir com soluções inovadoras.
+            Sou motivado, dedicado e busco minha primeira oportunidade para colocar em prática meus conhecimentos, aprender com profissionais experientes e crescer na carreira de desenvolvimento de software.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -25,14 +25,7 @@ export const AboutSection = () => {
                 Conecte-se Comigo
               </a>
 
-              <a
-                href="https://1drv.ms/w/c/7ec0c23add11b46c/EatKeuyDfyxKi6PXPW7T3-cBbuu8743y9EJl62Y-fOb2TA?e=ufO3m1" // 
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
-                target="_blank"
-                download 
-              >
-                Download CV
-              </a>
+
             </div>
           </div>
 
