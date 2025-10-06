@@ -11,7 +11,7 @@ const skills = [
   {name: "NextJS", category: "frontend"},
 
   // Backend
-  {name: "Java", category: "backend"},
+  
   // Tools
   { name: "Git/GitHub", category: "tools" },
   { name: "Figma", category: "tools" },

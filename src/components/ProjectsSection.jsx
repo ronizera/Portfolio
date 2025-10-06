@@ -40,16 +40,6 @@ const projects = [
     demoUrl: "https://receitas-rb.vercel.app/",
     githubUrl: "https://github.com/ronizera/receitas",
   },
-  {
-       
-    "id": 5,
-    "title": "Issue Tracker",
-    "description": "Aplicação full-stack para gerenciamento de tarefas e bugs. O projeto demonstra a capacidade de realizar operações de CRUD (criar, ler, atualizar e deletar) e gerenciar um estado de aplicação mais complexo. Desenvolvido com Next.js, TypeScript e Tailwind CSS, a aplicação foi projetada para ser eficiente e escalável.",
-    "image": "/projects/project5.png",
-    "tags": ["Next.js", "Typescript", "TailwindCSS", "CRUD", "Full-stack"],
-    "demoUrl": "https://issues-track-alpha.vercel.app",
-    "githubUrl": "https://github.com/ronizera/issues-track"
-}
 
   
 ];
