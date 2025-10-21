@@ -24,21 +24,21 @@ const projects = [
     id: 3,
     title: "Catálogos de Filmes",
     description:
-      "Aplicação web feita com React e Tailwind CSS que permite buscar, visualizar e favoritar filmes utilizando a API pública da OMDb.",
+      "Aplicação web feita com NextJS, React e Tailwind CSS que permite buscar, visualizar e favoritar filmes utilizando a API pública da OMDb.",
     image: "/projects/project3.png",
     tags: ["React", "TailwindCSS", "React Router DOM", "JavaScript"],
-    demoUrl: "https://filmes-wine.vercel.app/",
-    githubUrl: "https://github.com/ronizera/filmes",
+    demoUrl: "https://ronifilmescatalogo.vercel.app/",
+    githubUrl: "https://github.com/ronizera/filmescatalogo",
   },
    {
     id: 4,
-    title: "App de Receitas",
+    title: "Conversor de Moedas",
     description:
-      "Aplicação web para visualização de receitas, consumindo a API pública TheMealDB. O projeto utiliza Next.js para páginas dinâmicas, TypeScript para tipagem segura e Tailwind CSS para design responsivo e moderno.O app permite navegar por categorias de receitas, visualizar detalhes completos de cada prato e buscar receitas pelo nome. Todo o código está versionado no GitHub e o projeto está publicado online para acesso direto.",
+      "",
     image: "/projects/project4.png",
     tags: ["TailwindCSS", "React", "Nextjs", "Typescript"],
-    demoUrl: "https://receitas-rb.vercel.app/",
-    githubUrl: "https://github.com/ronizera/receitas",
+    demoUrl: "https://roniconversor-moeda.vercel.app/",
+    githubUrl: "https://github.com/ronizera/conversorMoeda",
   },
 
   
