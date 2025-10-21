@@ -34,7 +34,7 @@ const projects = [
     id: 4,
     title: "Conversor de Moedas",
     description:
-      "",
+      "Aplicação criada com React.js e TypeScript para converter valores entre moedas em tempo real. Consome a API ExchangeRate, com feedback de carregamento e validação de valores.Apresenta interface limpa, responsiva e com tratamento de erros personalizado.",
     image: "/projects/project4.png",
     tags: ["TailwindCSS", "React", "Nextjs", "Typescript"],
     demoUrl: "https://roniconversor-moeda.vercel.app/",
