@@ -13,11 +13,11 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-semibold">Desenvolvedor</h3>
 
             <p className="text-muted-foreground">
-            Olá! Me chamo Ronilton Breno e sou estudante de Engenharia de Software, cursando atualmente o 4º semestre.
-
-            Tenho interesse em desenvolvimento Front-end, estudando e praticando tecnologias como React.js, Next.js, TypeScript e Tailwind CSS.
-
-            Sou motivado, dedicado e busco minha primeira oportunidade para colocar em prática meus conhecimentos, aprender com profissionais experientes e crescer na carreira de desenvolvimento de software.
+           Sou estudante do 5º semestre de Engenharia de Software e desenvolvedor Full Stack em início de carreira.
+          Tenho experiência com React, Tailwind CSS e TypeScript no front-end, além de Node.js e APIs REST no back-end.
+          Utilizo Git/GitHub para versionamento e já realizei deploy de aplicações em produção.
+          Gosto de resolver problemas de forma prática, escrevendo código limpo e bem estruturado.
+          Atualmente, busco uma oportunidade como estagiário ou desenvolvedor júnior para evoluir profissionalmente.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
