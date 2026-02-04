@@ -4,9 +4,10 @@ const projects = [
   {
     id: 1,
     title: "Morioka Café",
-    description: "Projeto de uma cafeteria moderna chamada Morioka, desenvolvido com Next.js, focado em performance e navegação fluida. Apresenta cardápio interativo, design responsivo e visual minimalista.",
+    description:
+      "Projeto de uma cafeteria moderna chamada Morioka, desenvolvido com Next.js, focado em performance e navegação fluida. Apresenta cardápio interativo, design responsivo e visual minimalista.",
     image: "/projects/projeto-1.png",
-    tags: ["React", "TailwindCSS", "JavaScript", "Nextjs" ],
+    tags: ["React", "TailwindCSS", "JavaScript", "Nextjs"],
     demoUrl: "https://cafeteria-ronizera.vercel.app/",
     githubUrl: "https://github.com/ronizera/cafeteria",
   },
@@ -30,7 +31,7 @@ const projects = [
     demoUrl: "https://ronifilmescatalogo.vercel.app/",
     githubUrl: "https://github.com/ronizera/filmescatalogo",
   },
-   {
+  {
     id: 4,
     title: "Conversor de Moedas",
     description:
@@ -40,8 +41,15 @@ const projects = [
     demoUrl: "https://roniconversor-moeda.vercel.app/",
     githubUrl: "https://github.com/ronizera/conversorMoeda",
   },
-
-  
+  {
+    id: 5,
+    title: "Fitschedule",
+    description:
+      "Sistema full stack de agendamentos com autenticação, dashboard e regras de negócio, desenvolvido com foco em usabilidade e performance.",
+    video: "/projects/projeto5.mp4",
+    tags: ["React", "Node.js", "PostgreSQL", "Prisma", "TailwindCSS"],
+    githubUrl: "https://github.com/ronizera/fitschedule",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -54,8 +62,9 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Aqui estão alguns dos meus projetos recentes. Cada projeto foi cuidadosamente 
-          criado com atenção aos detalhes, desempenho e experiência do usuário.
+          Aqui estão alguns dos meus projetos recentes. Cada projeto foi
+          cuidadosamente criado com atenção aos detalhes, desempenho e
+          experiência do usuário.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -65,11 +74,24 @@ export const ProjectsSection = () => {
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                {project.video ? (
+                  <video
+                    src={project.video}
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    onMouseEnter={(e) => e.currentTarget.play()}
+                    onMouseLeave={(e) => e.currentTarget.pause()}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                )}
               </div>
 
               <div className="p-6">
